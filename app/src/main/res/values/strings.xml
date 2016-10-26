@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">"Course exercise "</string>
+    <string name="air_conditioning">"空调"</string>
+    <string name="refrigerator">"冰箱"</string>
+    <string name="washer">"洗衣机"</string>
+    <string name="small_appliances">"厨房小电器"</string>
+    <string name="big_appliances">"厨房大电器"</string>
+    <string name="life_appliances">"生活家电"</string>
+    <string name="calorifier">"热水器"</string>
+    <string name="tools">"周边配件"</string>
+    <string name="home">"首页"</string>
+    <string name="shopping_line">"购物车"</string>
+    <string name="me">"我"</string>
 </resources>
