@@ -1,175 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TableRow>
+
             <RelativeLayout
-                android:background="@drawable/table_frame_gray"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_height="wrap_content">
+                android:background="@drawable/table_frame_gray">
+
                 <ImageView
-                    android:layout_centerInParent="true"
+                    android:id="@+id/TImage1"
                     android:layout_width="80px"
                     android:layout_height="80px"
-                    android:src="@drawable/table_default_1"
-                    android:id="@+id/TImage1"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/table_default_1" />
+
                 <TextView
                     android:id="@+id/TText1"
-                    android:layout_marginTop="15dp"
-                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/TImage1"
                     android:layout_centerHorizontal="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/air_conditioning"/>
+                    android:layout_marginTop="15dp"
+                    android:text="@string/air_conditioning"
+                    android:textSize="10dp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:background="@drawable/table_frame_gray"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_height="wrap_content">
+                android:background="@drawable/table_frame_gray">
+
                 <ImageView
-                    android:layout_centerInParent="true"
+                    android:id="@+id/TImage2"
                     android:layout_width="80px"
                     android:layout_height="80px"
-                    android:src="@drawable/table_default_2"
-                    android:id="@+id/TImage2"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/table_default_2" />
+
                 <TextView
                     android:id="@+id/TText2"
-                    android:layout_marginTop="15dp"
-                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/TImage2"
                     android:layout_centerHorizontal="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/refrigerator"/>
+                    android:layout_marginTop="15dp"
+                    android:text="@string/refrigerator"
+                    android:textSize="10dp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:background="@drawable/table_frame_gray"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_height="wrap_content">
+                android:background="@drawable/table_frame_gray">
+
                 <ImageView
-                    android:layout_centerInParent="true"
+                    android:id="@+id/TImage3"
                     android:layout_width="80px"
                     android:layout_height="80px"
-                    android:src="@drawable/table_default_3"
-                    android:id="@+id/TImage3"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/table_default_3" />
+
                 <TextView
                     android:id="@+id/TText3"
-                    android:layout_marginTop="15dp"
-                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/TImage3"
                     android:layout_centerHorizontal="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/washer"/>
+                    android:layout_marginTop="15dp"
+                    android:text="@string/washer"
+                    android:textSize="10dp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:background="@drawable/table_frame_gray"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_height="wrap_content">
+                android:background="@drawable/table_frame_gray">
+
                 <ImageView
-                    android:layout_centerInParent="true"
+                    android:id="@+id/TImage4"
                     android:layout_width="80px"
                     android:layout_height="80px"
-                    android:src="@drawable/table_default_4"
-                    android:id="@+id/TImage4"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/table_default_4" />
+
                 <TextView
                     android:id="@+id/TText4"
-                    android:layout_marginTop="15dp"
-                    android:textSize="10dp"
-                    android:layout_below="@+id/TImage4"
-                    android:layout_centerHorizontal="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/small_appliances"/>
+                    android:layout_below="@+id/TImage4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/small_appliances"
+                    android:textSize="10dp" />
             </RelativeLayout>
 
         </TableRow>
+
         <TableRow>
+
             <RelativeLayout
-                android:background="@drawable/table_frame_gray"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_height="wrap_content">
+                android:background="@drawable/table_frame_gray">
+
                 <ImageView
-                    android:layout_centerInParent="true"
+                    android:id="@+id/TImage5"
                     android:layout_width="80px"
                     android:layout_height="80px"
-                    android:src="@drawable/table_default_5"
-                    android:id="@+id/TImage5"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/table_default_5" />
+
                 <TextView
                     android:id="@+id/TText5"
-                    android:layout_marginTop="15dp"
-                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/TImage5"
                     android:layout_centerHorizontal="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/big_appliances"/>
+                    android:layout_marginTop="15dp"
+                    android:text="@string/big_appliances"
+                    android:textSize="10dp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:background="@drawable/table_frame_gray"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_height="wrap_content">
+                android:background="@drawable/table_frame_gray">
+
                 <ImageView
-                    android:layout_centerInParent="true"
+                    android:id="@+id/TImage6"
                     android:layout_width="80px"
                     android:layout_height="80px"
-                    android:src="@drawable/table_default_6"
-                    android:id="@+id/TImage6"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/table_default_6" />
+
                 <TextView
                     android:id="@+id/TText6"
-                    android:layout_marginTop="15dp"
-                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/TImage6"
                     android:layout_centerHorizontal="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/life_appliances"/>
+                    android:layout_marginTop="15dp"
+                    android:text="@string/life_appliances"
+                    android:textSize="10dp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:background="@drawable/table_frame_gray"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_height="wrap_content">
+                android:background="@drawable/table_frame_gray">
+
                 <ImageView
-                    android:layout_centerInParent="true"
+                    android:id="@+id/TImage7"
                     android:layout_width="80px"
                     android:layout_height="80px"
-                    android:src="@drawable/table_default_7"
-                    android:id="@+id/TImage7"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/table_default_7" />
+
                 <TextView
                     android:id="@+id/TText7"
-                    android:layout_marginTop="15dp"
-                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/TImage7"
                     android:layout_centerHorizontal="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/calorifier"/>
+                    android:layout_marginTop="15dp"
+                    android:text="@string/calorifier"
+                    android:textSize="10dp" />
             </RelativeLayout>
+
             <RelativeLayout
-                android:background="@drawable/table_frame_gray"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_height="wrap_content">
+                android:background="@drawable/table_frame_gray">
+
                 <ImageView
-                    android:layout_centerInParent="true"
+                    android:id="@+id/TImage8"
                     android:layout_width="80px"
                     android:layout_height="80px"
-                    android:src="@drawable/table_default_8"
-                    android:id="@+id/TImage8"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/table_default_8" />
+
                 <TextView
                     android:id="@+id/TText8"
-                    android:layout_marginTop="15dp"
-                    android:textSize="10dp"
-                    android:layout_below="@+id/TImage8"
-                    android:layout_centerHorizontal="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tools"/>
+                    android:layout_below="@+id/TImage8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/tools"
+                    android:textSize="10dp" />
             </RelativeLayout>
         </TableRow>
     </TableLayout>
+
+    <ListView
+        android:id="@+id/Lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
 </LinearLayout>

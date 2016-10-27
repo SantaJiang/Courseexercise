@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ListImg"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:src="@drawable/product_default_1" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TvName"
+                android:text="商品名称" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TvNotice"
+                android:textColor="@color/colorGery"
+                android:textSize="10dp"
+                android:text="商品简介" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TvPrice"
+                android:textColor="@color/colorPrice"
+                android:text="商品价格" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
