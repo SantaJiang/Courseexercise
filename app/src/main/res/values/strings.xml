@@ -12,4 +12,6 @@
     <string name="shopping_line">"购物车"</string>
     <string name="me">"我"</string>
     <string name="default_username">"广达电器"</string>
+    <string name="orders">"全部订单"</string>
+    <string name="details">"查看详情 >"</string>
 </resources>
