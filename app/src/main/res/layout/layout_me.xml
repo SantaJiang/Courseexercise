@@ -57,7 +57,9 @@
         </TableRow>
         <TableRow
             android:background="#ffffff">
-            <RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_weight="1">
                 <ImageView
                     android:id="@+id/Function1"
                     android:layout_width="80px"
@@ -75,6 +77,7 @@
                     android:textSize="10dp" />
             </RelativeLayout>
             <RelativeLayout
+                android:layout_width="0dip"
                 android:layout_weight="1">
 
                 <ImageView
@@ -95,6 +98,7 @@
                     android:textSize="10dp" />
             </RelativeLayout>
             <RelativeLayout
+                android:layout_width="0dip"
                 android:layout_weight="1">
 
                 <ImageView
@@ -115,6 +119,7 @@
                     android:textSize="10dp" />
             </RelativeLayout>
             <RelativeLayout
+                android:layout_width="0dip"
                 android:layout_weight="1">
 
                 <ImageView
@@ -135,6 +140,7 @@
                     android:textSize="10dp" />
             </RelativeLayout>
             <RelativeLayout
+                android:layout_width="0dip"
                 android:layout_weight="1">
 
                 <ImageView

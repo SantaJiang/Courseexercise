@@ -18,7 +18,7 @@
 
             <TextView
                 android:id="@+id/TvName"
-                android:text="商品名称" />
+                android:text="@string/product_name" />
         </TableRow>
 
         <TableRow>
@@ -27,7 +27,7 @@
                 android:id="@+id/TvNotice"
                 android:textColor="@color/colorGery"
                 android:textSize="10dp"
-                android:text="商品简介" />
+                android:text="@string/product_description" />
         </TableRow>
 
         <TableRow>
@@ -35,7 +35,7 @@
             <TextView
                 android:id="@+id/TvPrice"
                 android:textColor="@color/colorPrice"
-                android:text="商品价格" />
+                android:text="@string/product_price" />
         </TableRow>
     </TableLayout>
 

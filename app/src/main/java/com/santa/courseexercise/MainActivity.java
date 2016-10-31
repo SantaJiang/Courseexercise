@@ -1,10 +1,12 @@
 package com.santa.courseexercise;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.santa.courseexercise.fragment.HomeFragment;
 import com.santa.courseexercise.fragment.MeFragment;
