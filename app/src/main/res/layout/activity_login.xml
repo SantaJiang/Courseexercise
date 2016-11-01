@@ -10,24 +10,18 @@
     android:clipToPadding="true"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@drawable/backimg"
     tools:context="com.santa.courseexercise.LoginActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/log"
-            android:id="@+id/logo"
-            android:layout_centerInParent="true"/>
         <TextView
+            android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/main_page_banner"
-            android:textColor="@color/white"
-            android:layout_below="@id/logo"
+            android:textColor="@color/black"
+            android:textSize="20dp"
             android:layout_centerHorizontal="true"/>
     </RelativeLayout>
 
@@ -36,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/user_name"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/user_pwd"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="记住用户名"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/Rme_the_name"/>
     <Button
         android:layout_width="match_parent"

@@ -8,7 +8,7 @@
         android:id="@+id/ListImg"
         android:layout_width="match_parent"
         android:layout_height="215dp"
-        android:src="@drawable/product_default_1" />
+        android:src="@drawable/product_def_1" />
 
     <TableLayout
         android:layout_width="match_parent"
