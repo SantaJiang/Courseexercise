@@ -28,8 +28,6 @@ import com.santa.courseexercise.R;
 /**
  * ViewPager实现的轮播图广告自定义视图，如京东首页的广告轮播图效果；
  * 既支持自动轮播页面也支持手势滑动切换页面
- * @author caizhiming
- *
  */
 
 public class SlideShowView extends FrameLayout {
@@ -138,7 +136,6 @@ public class SlideShowView extends FrameLayout {
 
     /**
      * 填充ViewPager的页面适配器
-     * @author caizhiming
      */
     private class MyPagerAdapter  extends PagerAdapter{
 
@@ -195,7 +192,6 @@ public class SlideShowView extends FrameLayout {
     /**
      * ViewPager的监听器
      * 当ViewPager中页面的状态发生改变时调用
-     * @author caizhiming
      */
     private class MyPageChangeListener implements OnPageChangeListener{
 
@@ -248,7 +244,6 @@ public class SlideShowView extends FrameLayout {
 
     /**
      *执行轮播图切换任务
-     *@author caizhiming
      */
     private class SlideShowTask implements Runnable{
 
@@ -264,7 +259,6 @@ public class SlideShowView extends FrameLayout {
     }
     /**
      * 销毁ImageView资源，回收内存
-     * @author caizhiming
      */
     private void destoryBitmaps() {
 
