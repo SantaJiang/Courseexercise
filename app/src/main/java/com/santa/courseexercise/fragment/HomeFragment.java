@@ -1,14 +1,17 @@
 package com.santa.courseexercise.fragment;
 
-import android.os.Bundle;
 import android.app.Fragment;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ScrollView;
 
+import com.santa.courseexercise.DetailsActivity;
 import com.santa.courseexercise.R;
 import com.santa.courseexercise.listview.Goods;
 import com.santa.courseexercise.listview.GoodsAdapter;
@@ -25,22 +28,23 @@ public class HomeFragment extends Fragment {
     //解决ListViewForScrollView而进行的操作
     private ScrollView sv;
 
-    private void getData(){
-        ls.add(new Goods((long) 1,"商品名称","商品参数","价格",R.drawable.product_default_1));
-        ls.add(new Goods((long) 1,"商品名称","商品参数","价格",R.drawable.product_default_1));
-        ls.add(new Goods((long) 1,"商品名称","商品参数","价格",R.drawable.product_default_1));
-        ls.add(new Goods((long) 1,"商品名称","商品参数","价格",R.drawable.product_default_1));
-        ls.add(new Goods((long) 1,"商品名称","商品参数","价格",R.drawable.product_default_1));
-        ls.add(new Goods((long) 1,"商品名称","商品参数","价格",R.drawable.product_default_1));
-        ls.add(new Goods((long) 1,"商品名称","商品参数","价格",R.drawable.product_default_1));
+    private void getData() {
+        ls.add(new Goods( (long) 1, "商品名称", "商品参数", "价格", R.drawable.product_default_1));
+        ls.add(new Goods( (long) 2, "商品名称", "商品参数", "价格", R.drawable.product_default_1));
+        ls.add(new Goods( (long) 3, "商品名称", "商品参数", "价格", R.drawable.product_default_1));
+        ls.add(new Goods( (long) 4, "商品名称", "商品参数", "价格", R.drawable.product_default_1));
+        ls.add(new Goods( (long) 5, "商品名称", "商品参数", "价格", R.drawable.product_default_1));
+        ls.add(new Goods( (long) 6, "商品名称", "商品参数", "价格", R.drawable.product_default_1));
+        ls.add(new Goods( (long) 7, "商品名称", "商品参数", "价格", R.drawable.product_default_1));
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.layout_home, null);
 
         getData();
 
-        mAdapter = new GoodsAdapter(getContext(),ls);
+        mAdapter = new GoodsAdapter(getContext(), ls);
 
         //解决ListViewForScrollView而进行的操作
         sv = (ScrollView) v.findViewById(R.id.Sv);
@@ -48,6 +52,7 @@ public class HomeFragment extends Fragment {
 
         lv = (ListViewForScrollView) v.findViewById(R.id.Lv);
         lv.setAdapter(mAdapter);
+
         return v;
     }
 }

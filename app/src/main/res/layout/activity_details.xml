@@ -17,7 +17,12 @@
             <RelativeLayout
                 android:background="#ffffff"
                 android:layout_width="match_parent"
-                android:layout_height="300dp">
+                android:layout_height="360dp">
+                <ImageView
+                    android:id="@+id/Goods_detail_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/product_details"/>
                 <RelativeLayout
                     android:id="@+id/Back"
                     android:layout_width="wrap_content"
@@ -36,12 +41,6 @@
                         android:textSize="10dp"
                         android:layout_centerHorizontal="true" />
                 </RelativeLayout>
-                <ImageView
-                    android:id="@+id/Goods_detail_img"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/product_details"/>
-
             </RelativeLayout>
             <TableLayout
                 android:id="@+id/Details_product"
@@ -173,9 +172,59 @@
                     android:text="商品详情"
                     android:textColor="@color/colorGery"/>
             </RelativeLayout>
-            <ImageView
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/introduction1"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/introduction2"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/introduction3"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/introduction4"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/introduction5"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/introduction6"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/introduction7"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"/>
+                </TableRow>
+            </TableLayout>
 
         </LinearLayout>
     </ScrollView>
