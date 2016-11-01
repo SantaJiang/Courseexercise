@@ -30,11 +30,11 @@ public class DetailsActivity extends Activity {
             public void run() {
                 img1.setImageResource(R.drawable.introduction1);
                 img2.setImageResource(R.drawable.introduction2);
-                img3.setImageResource(R.drawable.introduction3);
-                img4.setImageResource(R.drawable.introduction4);
-                img5.setImageResource(R.drawable.introduction5);
-                img6.setImageResource(R.drawable.introduction6);
-                img7.setImageResource(R.drawable.introduction7);
+                //img3.setImageResource(R.drawable.introduction3);
+                //img4.setImageResource(R.drawable.introduction4);
+                //img5.setImageResource(R.drawable.introduction5);
+                //img6.setImageResource(R.drawable.introduction6);
+                //img7.setImageResource(R.drawable.introduction7);
             }
         }.start();
     }
