@@ -29,13 +29,13 @@ public class HomeFragment extends Fragment {
     private ScrollView sv;
 
     private void getData() {
-        ls.add(new Goods( (long) 1, "商品名称", "商品参数", "价格", R.drawable.product_def_1));
-        ls.add(new Goods( (long) 2, "商品名称", "商品参数", "价格", R.drawable.product_def_1));
-        ls.add(new Goods( (long) 3, "商品名称", "商品参数", "价格", R.drawable.product_def_1));
-        ls.add(new Goods( (long) 4, "商品名称", "商品参数", "价格", R.drawable.product_def_1));
-        ls.add(new Goods( (long) 5, "商品名称", "商品参数", "价格", R.drawable.product_def_1));
-        ls.add(new Goods( (long) 6, "商品名称", "商品参数", "价格", R.drawable.product_def_1));
-        ls.add(new Goods( (long) 7, "商品名称", "商品参数", "价格", R.drawable.product_def_1));
+        ls.add(new Goods( (long) 1, "商品名称", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods( (long) 2, "商品名称", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods( (long) 3, "商品名称", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods( (long) 4, "商品名称", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods( (long) 5, "商品名称", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods( (long) 6, "商品名称", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods( (long) 7, "商品名称", "商品参数", "价格", R.drawable.product_details));
     }
 
     @Override

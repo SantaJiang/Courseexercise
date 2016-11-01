@@ -25,6 +25,7 @@ public class DetailsActivity extends Activity {
         img7 = (ImageView) findViewById(R.id.introduction7);
 
     }
+    //怀疑线程原因,全开后OOM报错
     private void LoadIntroduction(){
         new Thread() {
             public void run() {

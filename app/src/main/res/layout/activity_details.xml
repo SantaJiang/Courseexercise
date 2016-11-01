@@ -187,42 +187,42 @@
                         android:id="@+id/introduction2"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:layout_height="400dp"/>
+                        android:layout_height="380dp"/>
                 </TableRow>
                 <TableRow>
                     <ImageView
                         android:id="@+id/introduction3"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:layout_height="400dp"/>
+                        android:layout_height="wrap_content"/>
                 </TableRow>
                 <TableRow>
                     <ImageView
                         android:id="@+id/introduction4"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:layout_height="400dp"/>
+                        android:layout_height="wrap_content"/>
                 </TableRow>
                 <TableRow>
                     <ImageView
                         android:id="@+id/introduction5"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:layout_height="400dp"/>
+                        android:layout_height="wrap_content"/>
                 </TableRow>
                 <TableRow>
                     <ImageView
                         android:id="@+id/introduction6"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:layout_height="400dp"/>
+                        android:layout_height="wrap_content"/>
                 </TableRow>
                 <TableRow>
                     <ImageView
                         android:id="@+id/introduction7"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:layout_height="400dp"/>
+                        android:layout_height="wrap_content"/>
                 </TableRow>
             </TableLayout>
 
