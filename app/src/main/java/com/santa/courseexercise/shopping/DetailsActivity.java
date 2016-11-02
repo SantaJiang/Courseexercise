@@ -2,10 +2,13 @@ package com.santa.courseexercise.shopping;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.santa.courseexercise.R;
@@ -20,6 +23,7 @@ public class DetailsActivity extends Activity {
     private ImageView img5;
     private ImageView img6;
     private ImageView img7;
+    private Button btn;
 
 
     private void FindView() {
@@ -30,6 +34,7 @@ public class DetailsActivity extends Activity {
         img5 = (ImageView) findViewById(R.id.introduction5);
         img6 = (ImageView) findViewById(R.id.introduction6);
         img7 = (ImageView) findViewById(R.id.introduction7);
+        btn = (Button) findViewById(R.id.Settlement_btn);
 
     }
 
@@ -58,6 +63,13 @@ public class DetailsActivity extends Activity {
         setContentView(R.layout.activity_details);
         FindView();
         LoadIntroduction();
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(DetailsActivity.this,PayActivity.class);
+                startActivity(i);
+            }
+        });
 
     }
 }

@@ -25,7 +25,8 @@
         <activity android:name=".setting.accountsetting.adress.AddAdressActivity" />
         <activity android:name=".setting.accountsetting.accountsafety.AccountSafetyActivity" />
         <activity android:name=".setting.accountsetting.accountsafety.PasswdManagerActivity" />
-        <activity android:name=".shopping.PayActivity"></activity>
+        <activity android:name=".shopping.PayActivity" />
+        <activity android:name=".shopping.PayDoneActivity"></activity>
     </application>
 
 </manifest>

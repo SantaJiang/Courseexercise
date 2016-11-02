@@ -255,7 +255,7 @@
                     android:text="@string/shopping_line"/>
             </RelativeLayout>
             <Button
-                android:id="@+id/Settlement"
+                android:id="@+id/Settlement_btn"
                 android:layout_width="0dip"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
