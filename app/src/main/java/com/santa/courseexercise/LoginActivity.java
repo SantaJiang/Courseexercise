@@ -26,19 +26,19 @@ public class LoginActivity extends Activity {
     View.OnClickListener mylistener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            switch (view.getId()){
+            switch (view.getId()) {
                 case R.id.Login:
                     strName = Uname.getText().toString();  //toString,forced into a string
                     strPwd = Upwd.getText().toString();
-                    if(strName.length() > 8){
-                        Toast.makeText(LoginActivity.this,R.string.user_too_long,Toast.LENGTH_SHORT).show();
-                    }else {
-                        if ("123".equals(strPwd)){
+                    if (strName.length() > 8) {
+                        Toast.makeText(LoginActivity.this, R.string.user_too_long, Toast.LENGTH_SHORT).show();
+                    } else {
+                        if ("123".equals(strPwd)) {
                             //ProgressDialog进度对话框
                             LoginActivity.this.ProgressDialog();
                             LoginActivity.this.RememberTheLoginMessage();
-                        }else {
-                            Toast.makeText(LoginActivity.this,R.string.login_fail,Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(LoginActivity.this, R.string.login_fail, Toast.LENGTH_SHORT).show();
                         }
                     }
                     break;
@@ -46,28 +46,28 @@ public class LoginActivity extends Activity {
         }
     };
 
-    private void RememberTheLoginMessage(){
+    private void RememberTheLoginMessage() {
         //记住用户名和密码
-        if (Rme.isChecked()){
+        if (Rme.isChecked()) {
             SharedPreferences preferences = getSharedPreferences("MYAPP", Context.MODE_PRIVATE);
-            SharedPreferences.Editor  editor = preferences.edit();
-            editor.putString("NAME",strName);
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("NAME", strName);
             editor.commit();
         }
     }
 
-    private void PageSwitch(){
+    private void PageSwitch() {
         //结束LoginActivity
         LoginActivity.this.finish();
         //Activity的跳转
-        Intent i = new Intent(LoginActivity.this,MainActivity.class);
-        i.putExtra("NAME",strName);  //跳转页面的同时传递数据，通过key来识别，后边传递values
+        Intent i = new Intent(LoginActivity.this, MainActivity.class);
+        i.putExtra("NAME", strName);  //跳转页面的同时传递数据，通过key来识别，后边传递values
         startActivity(i);
 
-        Toast.makeText(LoginActivity.this,R.string.login_success,Toast.LENGTH_SHORT).show();
+        Toast.makeText(LoginActivity.this, R.string.login_success, Toast.LENGTH_SHORT).show();
     }
 
-    private void ProgressDialog(){
+    private void ProgressDialog() {
         // 创建ProgressDialog对象
         pd = new ProgressDialog(LoginActivity.this);
         // 设置进度条风格，风格为圆形，旋转的
@@ -93,7 +93,7 @@ public class LoginActivity extends Activity {
         new Thread() {
             public void run() {
                 try {
-                    while(count <= 100) {
+                    while (count <= 100) {
                         // 由线程来控制进度
                         pd.setProgress(count++);
                         Thread.sleep(5);
@@ -107,20 +107,20 @@ public class LoginActivity extends Activity {
         }.start();
     }
 
-    private void findView(){
-        Uname = (EditText)findViewById(R.id.Uname);
-        Rme = (CheckBox)findViewById(R.id.Rme_the_name);
-        Upwd = (EditText)findViewById(R.id.Upwd);
+    private void findView() {
+        Uname = (EditText) findViewById(R.id.Uname);
+        Rme = (CheckBox) findViewById(R.id.Rme_the_name);
+        Upwd = (EditText) findViewById(R.id.Upwd);
         Login = (Button) findViewById(R.id.Login);
     }
 
-    private void setListener(){
+    private void setListener() {
         Login.setOnClickListener(mylistener);
     }
 
-    private void setData(){
+    private void setData() {
         SharedPreferences preferences = getSharedPreferences("MYAPP", Context.MODE_PRIVATE);
-        String name = preferences.getString("NAME",null);
+        String name = preferences.getString("NAME", null);
         Uname.setText(name);
     }
 

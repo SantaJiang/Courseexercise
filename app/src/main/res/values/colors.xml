@@ -2,10 +2,10 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#76bc1a</color>
+    <color name="colorAccent">#ed6d31</color>
     <color name="colorPrice">#e19502</color>
     <color name="colorGery">#bab7b7</color>
-    <color name="tabBackgroundColor">#f5f5f5</color>
+    <color name="tabBackgroundColor">#ebebeb</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
 </resources>

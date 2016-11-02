@@ -2,19 +2,15 @@ package com.santa.courseexercise.listview;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.santa.courseexercise.DetailsActivity;
+import com.santa.courseexercise.shopping.DetailsActivity;
 import com.santa.courseexercise.R;
-import com.santa.courseexercise.fragment.HomeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +56,7 @@ public class GoodsAdapter extends BaseAdapter {
         ListImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,DetailsActivity.class);
+                Intent intent = new Intent(context, DetailsActivity.class);
                 context.startActivity(intent);
             }
         });

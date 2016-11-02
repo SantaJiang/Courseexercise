@@ -1,17 +1,13 @@
 package com.santa.courseexercise.fragment;
 
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.ScrollView;
 
-import com.santa.courseexercise.DetailsActivity;
 import com.santa.courseexercise.R;
 import com.santa.courseexercise.listview.Goods;
 import com.santa.courseexercise.listview.GoodsAdapter;
@@ -29,13 +25,13 @@ public class HomeFragment extends Fragment {
     private ScrollView sv;
 
     private void getData() {
-        ls.add(new Goods( (long) 1, "商品名称", "商品参数", "价格", R.drawable.product_details));
-        ls.add(new Goods( (long) 2, "商品名称", "商品参数", "价格", R.drawable.product_details));
-        ls.add(new Goods( (long) 3, "商品名称", "商品参数", "价格", R.drawable.product_details));
-        ls.add(new Goods( (long) 4, "商品名称", "商品参数", "价格", R.drawable.product_details));
-        ls.add(new Goods( (long) 5, "商品名称", "商品参数", "价格", R.drawable.product_details));
-        ls.add(new Goods( (long) 6, "商品名称", "商品参数", "价格", R.drawable.product_details));
-        ls.add(new Goods( (long) 7, "商品名称", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods((long) 1, "商品1", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods((long) 2, "商品2", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods((long) 3, "商品3", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods((long) 4, "商品4", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods((long) 5, "商品5", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods((long) 6, "商品6", "商品参数", "价格", R.drawable.product_details));
+        ls.add(new Goods((long) 7, "商品7", "商品参数", "价格", R.drawable.product_details));
     }
 
     @Override

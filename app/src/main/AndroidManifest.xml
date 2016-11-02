@@ -15,8 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".DetailsActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".shopping.DetailsActivity" />
+        <activity android:name=".orders.OrdersActivity" />
+        <activity android:name=".setting.SettingActivity" />
+        <activity android:name=".setting.accountsetting.AccountSetActivity" />
+        <activity android:name=".setting.about.AboutActivity" />
+        <activity android:name=".setting.accountsetting.adress.AdressListActivity" />
+        <activity android:name=".setting.accountsetting.adress.AddAdressActivity" />
+        <activity android:name=".setting.accountsetting.accountsafety.AccountSafetyActivity" />
+        <activity android:name=".setting.accountsetting.accountsafety.PasswdManagerActivity" />
+        <activity android:name=".shopping.PayActivity"></activity>
     </application>
 
 </manifest>

@@ -29,6 +29,7 @@
             android:layout_marginLeft="10dp"/>
     </RelativeLayout>
     <TableLayout
+        android:id="@+id/Orders_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
@@ -284,6 +285,7 @@
         </TableRow>
     </TableLayout>
     <TableLayout
+        android:id="@+id/Setting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
