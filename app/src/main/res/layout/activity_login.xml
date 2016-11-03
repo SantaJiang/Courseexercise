@@ -15,8 +15,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/guangda"/>
         <TextView
-            android:layout_marginTop="30dp"
+            android:layout_below="@+id/Logo"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/main_page_banner"
@@ -35,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Uname"
-        android:textColor="@color/colorGery"/>
+        android:textColor="@color/white"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Upwd"
-        android:textColor="@color/colorGery"/>
+        android:textColor="@color/white"/>
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
